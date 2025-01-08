@@ -15,7 +15,6 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
-  /* background-color: #60b347; */
 }
 
 /* LAYOUT */
@@ -116,4 +115,112 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* Reduce base font size for smaller screens */
+  }
+
+  header {
+    height: 30vh; /* Reduce header height */
+  }
+
+  main {
+    flex-direction: column; /* Stack left and right sections vertically */
+    justify-content: center;
+    gap: 2rem; /* Add spacing between sections */
+  }
+
+  .left,
+  .right {
+    width: 100%; /* Make sections full width */
+    text-align: center; /* Center-align text */
+  }
+
+  h1 {
+    font-size: 3rem; /* Reduce heading font size */
+    top: 50%; /* Adjust heading position */
+  }
+
+  .number {
+    font-size: 4rem; /* Reduce number font size */
+    width: 12rem; /* Reduce number box width */
+    padding: 2rem 0; /* Adjust padding */
+  }
+
+  .between {
+    font-size: 1.2rem; /* Reduce font size for "Between" text */
+    top: 1rem; /* Adjust position */
+    right: 1rem;
+  }
+
+  .again {
+    top: 1rem; /* Adjust position */
+    left: 1rem;
+  }
+
+  .guess {
+    font-size: 3rem; /* Reduce input font size */
+    width: 20rem; /* Reduce input width */
+    padding: 1.5rem; /* Adjust padding */
+    margin-bottom: 2rem; /* Reduce margin */
+  }
+
+  .btn {
+    font-size: 1.6rem; /* Reduce button font size */
+    padding: 1.5rem 2rem; /* Adjust button padding */
+  }
+
+  .message {
+    margin-bottom: 4rem; /* Reduce margin */
+    height: auto; /* Allow message height to adjust */
+  }
+
+  .label-score,
+  .label-highscore {
+    font-size: 1.6rem; /* Reduce font size for labels */
+    margin-bottom: 1rem; /* Reduce margin */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 45%; /* Further reduce base font size for very small screens */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Further reduce heading font size */
+  }
+
+  .number {
+    font-size: 3rem; /* Further reduce number font size */
+    width: 10rem; /* Further reduce number box width */
+    padding: 1.5rem 0; /* Further adjust padding */
+  }
+
+  .between {
+    font-size: 1rem; /* Further reduce font size for "Between" text */
+  }
+
+  .guess {
+    font-size: 2.5rem; /* Further reduce input font size */
+    width: 15rem; /* Further reduce input width */
+    padding: 1rem; /* Further adjust padding */
+  }
+
+  .btn {
+    font-size: 1.4rem; /* Further reduce button font size */
+    padding: 1rem 1.5rem; /* Further adjust button padding */
+  }
+
+  .message {
+    margin-bottom: 3rem; /* Further reduce margin */
+  }
+
+  .label-score,
+  .label-highscore {
+    font-size: 1.4rem; /* Further reduce font size for labels */
+  }
 }
