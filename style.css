@@ -221,6 +221,6 @@ h1 {
 
   .label-score,
   .label-highscore {
-    font-size: 1.4rem; /* Further reduce font size for labels */
+    font-size: 1.4rem; 
   }
 }
